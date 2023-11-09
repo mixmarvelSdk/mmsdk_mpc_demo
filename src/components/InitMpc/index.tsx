@@ -1,7 +1,7 @@
 /*
  * @Author: mouse
  * @Date: 2023-07-13 19:34:21
- * @LastEditTime: 2023-10-21 17:12:39
+ * @LastEditTime: 2023-11-09 10:45:48
  * @LastEditors: mouse
  * @Description: 
  * @FilePath: /mmsdk_mpc_demo/src/components/InitMpc/index.tsx
@@ -30,9 +30,9 @@ function InitMpc(props: MpcProps) {
   };
 
   const authInfo = {
-    keyHash:"",
-    appPubKey:"",
-    keySalt:"",
+    keyHash:"U2FsdGVkX19fvkD1NUL35kjOyXjcR4P3bAIld7/VIOo8FbhVCEMS3XWv0DRptiusyAqo07NvtVUutzkLXsftOHFDCfLivBK0aaIx/ubUlU/N8BmGVc9AWuN0tNRuNvG7",
+    appPubKey:"023560d740eb29be0b870850f6de6e2c03cae1ae4a4623c6a0e8e4ca57b327a9a6",
+    keySalt:"lJDekwE8TH50HWwP",
   };
   const yeehaUserMpc = async()=>{
     const mpc = new MmSmartAccount(
@@ -57,7 +57,12 @@ function InitMpc(props: MpcProps) {
         authInfo
       }
     );
-    await mpc.init();
+    setLoading(true);
+    await mpc.init()
+    address.current = mpc.getAddress();
+    props.onCreateAccount(mpc);
+    setLoading(false);
+    setSuccess(true);
   }
   return (
     <>
