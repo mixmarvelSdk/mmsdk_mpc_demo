@@ -1,7 +1,7 @@
 /*
  * @Author: mouse
  * @Date: 2023-07-13 19:34:21
- * @LastEditTime: 2023-10-21 18:07:15
+ * @LastEditTime: 2024-01-05 12:13:45
  * @LastEditors: mouse
  * @Description: 
  * @FilePath: /mmsdk_mpc_demo/src/App.tsx
@@ -12,6 +12,7 @@ import InitMpc from "./components/InitMpc";
 import Header from "./components/Header";
 import Nft from "./components/Nft";
 import Native from "./components/Native";
+import Sign from "./components/Sign";
 import "./App.css";
 import {MmSmartAccount} from "@mixmarvel/mmsdk_mpc";
 import Token from "./components/Token";
@@ -53,6 +54,10 @@ function App() {
               )}
               <section className="feat-section">
                 <Token account={account} />
+              </section>
+
+              <section className="feat-section">
+                <Sign account={account} />
               </section>
             </>
           )}

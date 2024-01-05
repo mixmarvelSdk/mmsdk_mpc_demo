@@ -2179,10 +2179,10 @@
     semver "^7.5.4"
     superstruct "^1.0.3"
 
-"@mixmarvel/mmsdk_mpc@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@mixmarvel/mmsdk_mpc/-/mmsdk_mpc-1.0.3.tgz#a11e706c9ab52ffe5521bf8299280e231acb858c"
-  integrity sha512-ANREIfZaSUOFYSMpKofs6gk7DFxsDC252RT9eYb4Gx/YgvbeAWnIeJNWKuW+sZaaJrlo4mledXqBjCG4vUQpyg==
+"@mixmarvel/mmsdk_mpc@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@mixmarvel/mmsdk_mpc/-/mmsdk_mpc-1.0.4.tgz#051c19b5c6576a60b4dd1db0d27b08b38170b442"
+  integrity sha512-cqMfdbbKK0eMfdZyffEo5stWVpE5oFpW+LPAbK1XbnVXgEGrTVPCaW9ylGLhtpQVI+GNyuBGrS9c+wjL5oF1lw==
   dependencies:
     "@mixmarvel/ts-indexdb" "^0.0.1"
     "@toruslabs/eccrypto" "^4.0.0"
