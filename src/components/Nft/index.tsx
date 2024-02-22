@@ -1,7 +1,7 @@
 /*
  * @Author: mouse
  * @Date: 2023-10-21 14:05:01
- * @LastEditTime: 2023-10-23 14:33:15
+ * @LastEditTime: 2024-02-21 14:41:35
  * @LastEditors: mouse
  * @Description: 
  * @FilePath: /mmsdk_mpc_demo/src/components/Nft/index.tsx
@@ -26,7 +26,7 @@ function Nft(props:NftProps) {
   const startMint = async () => {
     setTransactionHash("");
     setMintLoading(true);
-    const address = await account.getAddress();
+    const address = account.getAddress();
     const data = mintNFTFunctionData(address);
     const tx = {
       value: BigNumber.from(0).toHexString(),

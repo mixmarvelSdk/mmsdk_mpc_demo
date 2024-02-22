@@ -1,7 +1,7 @@
 /*
  * @Author: mouse
  * @Date: 2023-07-13 19:34:21
- * @LastEditTime: 2024-01-05 12:13:45
+ * @LastEditTime: 2024-02-21 18:15:50
  * @LastEditors: mouse
  * @Description: 
  * @FilePath: /mmsdk_mpc_demo/src/App.tsx
@@ -16,6 +16,8 @@ import Sign from "./components/Sign";
 import "./App.css";
 import {MmSmartAccount} from "@mixmarvel/mmsdk_mpc";
 import Token from "./components/Token";
+
+import CheckIn from "./components/CheckIn";
 
 function App() {
   const [account, setAccount] = useState<MmSmartAccount | undefined>();
@@ -52,12 +54,15 @@ function App() {
                   <Nft account={account} />
                 </section>
               )}
-              <section className="feat-section">
+              <section className="feat-section"  style={{ marginBottom: "20px" }}>
                 <Token account={account} />
               </section>
 
-              <section className="feat-section">
+              <section className="feat-section"  style={{ marginBottom: "20px" }}>
                 <Sign account={account} />
+              </section>
+              <section className="feat-section"  style={{ marginBottom: "20px" }}>
+                <CheckIn account={account} />
               </section>
             </>
           )}

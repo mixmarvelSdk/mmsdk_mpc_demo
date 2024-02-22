@@ -2179,10 +2179,10 @@
     semver "^7.5.4"
     superstruct "^1.0.3"
 
-"@mixmarvel/mmsdk_mpc@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@mixmarvel/mmsdk_mpc/-/mmsdk_mpc-1.0.4.tgz#051c19b5c6576a60b4dd1db0d27b08b38170b442"
-  integrity sha512-cqMfdbbKK0eMfdZyffEo5stWVpE5oFpW+LPAbK1XbnVXgEGrTVPCaW9ylGLhtpQVI+GNyuBGrS9c+wjL5oF1lw==
+"@mixmarvel/mmsdk_mpc@1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@mixmarvel/mmsdk_mpc/-/mmsdk_mpc-1.0.8.tgz#2d1c53f08989211e52287792098fe62dd55d1bbe"
+  integrity sha512-Q4B3AAlGg9jRaABqqlPgvwtXDUTD6HsuVq+36UbsjIzxn6kWa0Dwskllp5M+ytnRIop921vIHjklyRnffrSjPQ==
   dependencies:
     "@mixmarvel/ts-indexdb" "^0.0.1"
     "@toruslabs/eccrypto" "^4.0.0"
@@ -2194,7 +2194,7 @@
     axios "^1.4.0"
     crypto-js "^4.1.1"
     ethers "5.7"
-    mpcsinger "^1.1.15"
+    mpcsinger "^1.1.18"
     mpcsmartaccount "^1.1.7"
 
 "@mixmarvel/ts-indexdb@^0.0.1":
@@ -4778,6 +4778,15 @@ axios@^1.4.0:
     form-data "^4.0.0"
     proxy-from-env "^1.1.0"
 
+axios@^1.6.7:
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.7.tgz#7b48c2e27c96f9c68a2f8f31e2ab19f59b06b0a7"
+  integrity sha512-/hDJGff6/c7u0hDkvkGxR/oy6CbCs8ziCsC7SqmhjfozqiJGc8Z11wrv9z9lYfY4K8l+H9TpjcMDX0xOZmx+RA==
+  dependencies:
+    follow-redirects "^1.15.4"
+    form-data "^4.0.0"
+    proxy-from-env "^1.1.0"
+
 axobject-query@^3.1.1:
   version "3.1.1"
   resolved "https://registry.npmjs.org/axobject-query/-/axobject-query-3.1.1.tgz"
@@ -7234,6 +7243,11 @@ follow-redirects@^1.15.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.3.tgz#fe2f3ef2690afce7e82ed0b44db08165b207123a"
   integrity sha512-1VzOtuEM8pC9SFU1E+8KfTjZyMztRsgEfwQl44z8A25uy13jSzTj6dyK2Df52iV0vgHCfBwLhDWevLn95w5v6Q==
 
+follow-redirects@^1.15.4:
+  version "1.15.5"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.5.tgz#54d4d6d062c0fa7d9d17feb008461550e3ba8020"
+  integrity sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw==
+
 for-each@^0.3.3:
   version "0.3.3"
   resolved "https://registry.npmjs.org/for-each/-/for-each-0.3.3.tgz"
@@ -9318,10 +9332,10 @@ mpc-wallet@^0.0.2:
     ethers "^5.7.1"
     mpc-keys "^0.0.2"
 
-mpcsinger@^1.1.15:
-  version "1.1.15"
-  resolved "https://registry.yarnpkg.com/mpcsinger/-/mpcsinger-1.1.15.tgz#9a5bdab4d30ac8cd275019b935a8293a9ac186bd"
-  integrity sha512-M6cMrMS7FC607TL8CVmSk5TcZmA9qZqdk1/bHfVjDEyIRkq6Zi57xALxP6S8ZzcPMawvnJ3krGAUj20akx5bjQ==
+mpcsinger@^1.1.18:
+  version "1.1.18"
+  resolved "https://registry.yarnpkg.com/mpcsinger/-/mpcsinger-1.1.18.tgz#bc82e8cd7e453a144ae85c7a971c34a6b9a4f477"
+  integrity sha512-SHn6fkZQ77yEuwQebjKAYcLJqcKYDY6tE5uoMnYcdw9N0sepY67nYC4ToYJRlYNuW4aI9eS3FmkV5BsoikFF9A==
   dependencies:
     ethers "^5.7.1"
 

@@ -34,7 +34,9 @@ function Native(props: NativeProps) {
 
   const fetchBalance = useCallback(async () => {
     const address = account.getAddress();
+    // console.log(address,1111);
     let balance = await account.balance(address);
+    // console.log(balance,222222);
     balance = utils.formatEther(balance).toString();
     setBalance(balance)
   }, [account])

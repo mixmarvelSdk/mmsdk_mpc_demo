@@ -28,7 +28,7 @@ function Token(props: TokenProps) {
   const Mint = async () => {
     setMintLoading(true);
     const  amount = utils.parseEther("100").toString();
-    const address = await account.getAddress();
+    const address =  account.getAddress();
     const data = mintFtFunctionData(address, amount);
     const tx = {
       value: BigNumber.from(0).toHexString(),
